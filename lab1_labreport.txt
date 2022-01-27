@@ -1,0 +1,27 @@
+1.) How could you copy all the files from the current directory to its parent directory?
+
+        cp /home/student/currentdirectoryname/* /home/student
+            
+
+2.) How could you move all the files that end with an extension *.h in your home directory to the current directory
+    without knowing the full path to the current directory?
+
+        By using the shorthand notation for current directory and home directory i.e.
+        mv ~/*.h .
+
+3.) Write a command sequence to make a directory called 'backup' underneath the current directory, then copy all the
+    files in the current directory to 'backup'.
+    
+        mkdir backup
+        cp /home/student/currentdirectoryname/* /home/student/currentdirectoryname/backup
+        
+4.) If a program becomes unresponsive, what two Linux commands could you use to indentify the faulty program
+    number and terminate it?
+    
+        You can use ps to see all the processes currently running and find the faulty program number then use the 
+        kill command along with the faulty program number to kill that particular program 
+        
+5.) When you ran grep, the version of Ubuntu you're currently running was listed. What version is it?
+
+        Ubutntu 16.04.7 LTS 
+        This information is in the /etc/os-release directory  

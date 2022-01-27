@@ -1,0 +1,24 @@
+import re
+
+
+def main():
+    
+    with open('in1.txt') as f:
+        lines = f.readlines()
+        
+
+    listtostr = " ".join([str(elem) for elem in lines])
+    
+    print(listtostr)
+
+    rmnonalnum = re.sub(r'\W+', '', listtostr)
+
+    print(rmnonalnum)
+
+
+
+
+
+
+if __name__ == "__main__":
+    main()
